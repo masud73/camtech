@@ -1,0 +1,9 @@
+@import url('./styles/app/header.css');
+@import url('./styles/app/main.css');
+@import url('./styles/app/footer.css');
+@import url('./styles/user/portal.css');
+@import url('./styles/pages.css');
+
+.bg-f5 {
+    background-color: #f5f5f5 !important;
+}

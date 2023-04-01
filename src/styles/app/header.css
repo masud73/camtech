@@ -1,0 +1,17 @@
+@import url('../navbar.css');
+
+.app-header {  width: 100%; }
+
+#top-bar-container {
+    width: 100%;
+    padding: .35rem 1.5rem;
+    padding-top: .25rem;
+    background-color: var(--color-primary);
+}
+
+#top-bar-container * { color: var(--color-white); }
+
+.banner-wrapper {
+    width: 100%;
+    padding: 1.5rem 10rem;
+}

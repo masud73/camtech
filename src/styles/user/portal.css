@@ -1,0 +1,29 @@
+.form-container {
+    width: 320px;
+    margin-bottom: 2rem !important;
+}
+
+#how-to-apply-container div.how-to-apply-item:nth-child(odd) {
+    border-right: none !important;
+}
+
+#how-to-apply-container div.how-to-apply-item:last-child {
+    border-right: 1px solid var(--color-scale-gray-2) !important;
+}
+
+.how-to-apply-item h3 { font-size: 1.1em !important; }
+
+.how-to-apply-item p { font-size: 1em !important; }
+
+
+@media screen and (max-width: 600px) {
+    #how-to-apply-container div.how-to-apply-item {
+        width: 100% !important;
+    }
+
+    #how-to-apply-container div.how-to-apply-item:nth-child(odd) {
+        border-right: 1px solid var(--color-scale-gray-2) !important;
+    }
+
+    .form-container { width: 85% !important; }
+}

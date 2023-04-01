@@ -1,0 +1,100 @@
+:root {
+  /* Primary colors */
+  --color-primary: #0A70F6;
+  --color-secondary: #BBA365;
+  --color-black: #1b1f24;
+  /* White */
+  --color-white: #ffffff;
+  --color-scale-white-f9: #f9f9f9;
+  --color-scale-white-f7: #f7f7f7;
+  --color-scale-white-f5: #f5f5f5;
+  --color-scale-white-d7: #d7d7d7;
+  --color-scale-white-e8: #e8e8e8;
+  /* Shades of GRAY */
+  --color-scale-gray-0: #f6f8fa;
+  --color-scale-gray-1: #eaeef2;
+  --color-scale-gray-2: #d0d7de;
+  --color-scale-gray-3: #afb8c1;
+  --color-scale-gray-4: #8c959f;
+  --color-scale-gray-5: #6e7781;
+  --color-scale-gray-6: #57606a;
+  --color-scale-gray-7: #424a53;
+  --color-scale-gray-8: #32383f;
+  --color-scale-gray-9: #24292f;
+  /* BLUE */
+  --color-scale-blue-0: #ddf4ff;
+  --color-scale-blue-1: #b6e3ff;
+  --color-scale-blue-2: #80ccff;
+  --color-scale-blue-3: #54aeff;
+  --color-scale-blue-4: #218bff;
+  --color-scale-blue-5: #0969da;
+  --color-scale-blue-6: #0550ae;
+  --color-scale-blue-7: #033d8b;
+  --color-scale-blue-8: #0a3069;
+  --color-scale-blue-9: #002155;
+  /* RED */
+  --color-scale-red--1: #fad9d9;
+  --color-scale-red-0: #ffebe9;
+  --color-scale-red-1: #ffcecb;
+  --color-scale-red-2: #ffaba8;
+  --color-scale-red-3: #ff8182;
+  --color-scale-red-4: #fa4549;
+  --color-scale-red-5: #cf222e;
+  --color-scale-red-6: #a40e26;
+  --color-scale-red-7: #82071e;
+  --color-scale-red-8: #660018;
+  --color-scale-red-9: #4c0014;
+  /* GREEN */
+  --color-scale-green--1: #dcffe4;
+  --color-scale-green-0: #dafbe1;
+  --color-scale-green-1: #aceebb;
+  --color-scale-green-2: #6fdd8b;
+  --color-scale-green-3: #4ac26b;
+  --color-scale-green-4: #2da44e;
+  --color-scale-green-5: #1a7f37;
+  --color-scale-green-6: #116329;
+  --color-scale-green-7: #044f1e;
+  --color-scale-green-8: #003d16;
+}
+
+html {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  list-style-type: none;
+  line-height: 1.3;
+  letter-spacing: .01rem;
+  color: var(--color-black);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+ul li a {
+  color: var(--color-scale-blue-3);
+  text-decoration: none;
+}
+
+ul li a:hover { text-decoration: underline; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  color: var(--color-black);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
