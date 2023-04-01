@@ -17,19 +17,19 @@ export default function AppFooter() {
                 <div id='footer-links-wrapper' className="me-5">
                     <h4 className="fs-5">Useful Links</h4>
                     <ul>
-                        <li><a href="#" className='lh-base'>Admissions</a></li>
-                        <li><a href="#" className='lh-base'>News</a></li>
-                        <li><a href="#" className='lh-base'>Portals</a></li>
-                        <li><a href="#" className='lh-base'>Library</a></li>
-                        <li><a href="#" className='lh-base'>Calanders</a></li>
+                        <li><a href="/admissions" className='lh-base'>Admissions</a></li>
+                        <li><a href="#news" className='lh-base'>News</a></li>
+                        <li><a href="/admissions" className='lh-base'>Portals</a></li>
+                        <li><a href="/library" className='lh-base'>Library</a></li>
+                        <li><a href="#news" className='lh-base'>Calanders</a></li>
                     </ul>
                 </div>
                 <div id='social-wrapper'>
                     <h4 className="fs-5">Social Media</h4>
                     <div className='d-flex align-items-center'>
-                        <a href="#" className="me-3 rounded border border-secondary border-opacity-25 p-1"><Twitter size={30} /></a>
+                        <a href="https://twitter.com/" className="me-3 rounded border border-secondary border-opacity-25 p-1"><Twitter size={30} /></a>
                         <a href="https://web.facebook.com/groups/417586871675318" className="me-3 rounded border border-secondary border-opacity-25 p-1"><Facebook size={30} /></a>
-                        <a href="#" className="me-3 rounded border border-secondary border-opacity-25 p-1"><Instagram size={30} /></a>
+                        <a href="https://instagram.com/" className="me-3 rounded border border-secondary border-opacity-25 p-1"><Instagram size={30} /></a>
                     </div>
                 </div>
             </div>

@@ -4,10 +4,6 @@ import { Form } from "../Form";
 export default function Contact() {
     const formData = useForm('applicant-login');
     const {
-        email,
-        password,
-        emailHelperText,
-        passwordHelperText,
         message,
         handleSubmit,
         handleChange

@@ -8,7 +8,7 @@ export default function News() {
                     <div className="news-text-wrapper overflow-hidden">
                         <h4 className="fs-5 mb-1">Heading</h4>
                         <p className="mb-1">Lorem ipsum dolor sit amet consectetor Lorem ipsum dolor sit amet consectetorLorem  ipsum dolor sit amet consectetor</p>
-                        <a href="#" className="text-decoration-none">Read More</a>
+                        <a href="#news" className="text-decoration-none">Read More</a>
                     </div>
                 </div>
 
@@ -17,7 +17,7 @@ export default function News() {
                     <div className="news-text-wrapper overflow-hidden">
                         <h4 className="fs-5 mb-1">Heading</h4>
                         <p className="mb-1">Lorem ipsum dolor sit amet consectetor Lorem ipsum dolor sit amet consectetorLorem  ipsum dolor sit amet consectetor</p>
-                        <a href="#" className="text-decoration-none">Read More</a>
+                        <a href="#news" className="text-decoration-none">Read More</a>
                     </div>
                 </div>
 
@@ -26,7 +26,7 @@ export default function News() {
                     <div className="news-text-wrapper overflow-hidden">
                         <h4 className="fs-5 mb-1">Heading</h4>
                         <p className="mb-1">Lorem ipsum dolor sit amet consectetor Lorem ipsum dolor sit amet consectetorLorem  ipsum dolor sit amet consectetor</p>
-                        <a href="#" className="text-decoration-none">Read More</a>
+                        <a href="#news" className="text-decoration-none">Read More</a>
                     </div>
                 </div>
             </div>
