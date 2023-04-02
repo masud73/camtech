@@ -143,6 +143,7 @@ main section h3 {
 .cxcc {
     background-color: rgba(0, 0, 0, 0.16);
     backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
 }
 
 table {
@@ -217,11 +218,12 @@ table {
         margin-bottom: 1rem;
     }
 
-    #welcome-img-container {width: 99%; }
+    #welcome-img-container {width: 90%; }
 
     #welcome-img-container img {
-        height: 400px;
+        height: 420px;
         width: 100%;
+        border: none !important;
         object-fit: cover;
         -o-object-fit: cover;
     }

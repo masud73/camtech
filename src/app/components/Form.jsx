@@ -9,10 +9,11 @@ export function Form(props) {
     return (
         <Box onSubmit={props.handleSubmit} component='form' autoComplete="off" className='form-container border rounded p-4 m-auto mb-5'>
             {props.message && <Alert className='mb-4' severity={props.message.type} color={props.message.color}>{props.message.text}</Alert>}
-            <Stack direction='row' gap={3}>
+            <Stack>
                 {props.fields.map((f) => {
                     return (
                         <TextField
+                            className='mb-3'
                             key={f.name}
                             error={f.helperText?true:false}
                             helperText={f.helperText}
@@ -30,10 +31,10 @@ export function Form(props) {
                         />
                     );
                 })}
-                <Button type="submit" fullWidth variant="contained" size='medium'>{props.submitButtonLabel}</Button>
+                <Button className='mb-2' type="submit" fullWidth variant="contained" size='medium'>{props.submitButtonLabel}</Button>
                 {!props.noFooter &&
                     <>
-                    <Divider>or</Divider>
+                    <Divider className='mb-2'>or</Divider>
                     <div className="d-flex justify-content-between">
                         {
                             props.hasFormFooterLinks?
