@@ -76,6 +76,7 @@ export default function AppNavbar()
             </NavDropdown>
             <Nav.Link as={NavLink} to="/about" onClick={() => setExpanded(false)}>About</Nav.Link>
             <Nav.Link as={NavLink} to="/contact_us" onClick={() => setExpanded(false)}>Contact Us</Nav.Link>
+            <Nav.Link id='nav-student-btn-login' as={NavLink} to="/student/login" onClick={() => setExpanded(false)}>Student Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

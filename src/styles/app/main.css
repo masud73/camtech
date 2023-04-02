@@ -132,6 +132,11 @@ main section h3 {
 
 .officer div span { font-size: 1.05rem !important; }
 
+#p-officers-divider-label::before, #p-officers-divider-label::after {
+    border-top-color: rgb(226, 188, 16);
+    border-width: 3px;
+}
+
 
 /* DEPARTMENTS PAGES STYLES */
 

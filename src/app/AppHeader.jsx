@@ -12,7 +12,7 @@ export default function AppHeader() {
 
     return (
         <header className="app-header">
-            <TopBar queryRef="info@camtech.edu.ng" />
+            <TopBar homepage queryRef="info@camtech.edu.ng" />
             <div className="banner-wrapper" role='banner'>
                 <img src="./assets/images/banner.png" alt="" className='object-fit-cover' width='100%' height="100%" />
             </div>
@@ -50,6 +50,7 @@ export function TopBar(props) {
                 </a>
             </div>
             <div className="right-content d-flex align-items-center">
+                {props.homepage && <Button size="small" variant='outlined' className='text-capitalize me-3 border border-white'>Student Login</Button>}
                 <a href="https://twitter.com/" className='border p-1 rounded text-decoration-none me-3' target='_blank' rel='noopener noreferrer'><div className="wrapper d-flex align-items-center"><Twitter size={17} /></div></a>
                 <a href="https://web.facebook.com/groups/417586871675318" className='border p-1 rounded text-decoration-none me-3' target='_blank' rel='noopener noreferrer'><div className="wrapper d-flex align-items-center"><Facebook size={17} /></div></a>
                 <a href="https://instagram.com/" className='border p-1 rounded text-decoration-none' target='_blank' rel='noopener noreferrer'><div className="wrapper d-flex align-items-center"><Instagram size={17} /></div></a>

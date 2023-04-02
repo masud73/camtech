@@ -11,7 +11,7 @@ export default function WelcomeAddress(props) {
                         height={500}
                         width={400}
                         className="d-block"
-                        style={{borderRadius: '30px', border: '8px dashed red'}}
+                        style={{borderRadius: '30px', border: '6px dashed red'}}
                     />
                     :
                     <img

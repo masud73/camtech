@@ -40,6 +40,8 @@
     background-color: var(--color-secondary) !important;
 }
 
+#nav-student-btn-login { display: none; }
+
 @media screen and (max-width: 992px) {
     #brand { display: inline-block; }
 
@@ -51,5 +53,7 @@
     }
 
     .dropdown-submenu-container a.dropdown-submenu::after { transform: rotate(0deg) !important; }
+
+    #nav-student-btn-login { display: inline-block; }
 
 }
