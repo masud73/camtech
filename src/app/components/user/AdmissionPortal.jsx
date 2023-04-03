@@ -32,7 +32,7 @@ export default function AdmissionPortal() {
                         <Card className='text-center'>
                             <Card.Header as='h6'>Courses & Departments</Card.Header>
                             <Card.Body className='text-justify'>
-                                Download a soft-copy of the available courses & departments offered by the College. <br />
+                                Download a soft-copy of the available courses & departments offered by the college. <br />
                                 <Button className='mt-4 text-capitalize' variant="outlined" startIcon={<Download size={18} color='blue' />}>
                                     Download
                                 </Button>
