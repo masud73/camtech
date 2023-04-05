@@ -1,15 +1,18 @@
-import { Alert } from 'react-bootstrap';
 import { Envelope, Facebook, Instagram, Twitter } from 'react-bootstrap-icons';
 import AppNavbar from './components/NavBar';
 
 import Button from '@mui/material/Button';
-import { Stack } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Alert } from 'react-bootstrap';
 
 
 export default function AppHeader() {
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
+    const navigate = useNavigate();
+
+    const handleClose = () => setShow(false);
 
     return (
         <header className="app-header">
@@ -17,23 +20,21 @@ export default function AppHeader() {
             <div className="banner-wrapper" role='banner'>
                 <img src="./assets/images/banner.png" alt="" className='object-fit-cover' width='100%' height="100%" />
             </div>
-            <Alert show={show} variant="info" className='w-75 m-auto mb-4' dismissible onClose={() => setShow(false)}>
-                <div className="d-flex flex-wrap">
-                    <Alert.Heading className='me-3'>Admission!</Alert.Heading>
-                    <Alert.Heading className='me-3'>Admission!!</Alert.Heading>
-                    <Alert.Heading>Admission!!!</Alert.Heading>
-                </div>
-                <p>
-                    This is to inform the general public that online application portal for admission into College of Administration Management and Technology 2022/2023 session is now open! <br />
-                    <br />
-                    Interested applicants are to apply via this link <Alert.Link href='#'>www.camtech.edu.ng/admissions/</Alert.Link>
-                </p>
-                <hr />
-                <Stack direction='row' spacing={2}>
-                    <Button variant='outlined' size="medium" onClick={() => setShow(false)}>dismiss</Button>
-                    <Button variant='contained' size="medium">Apply Now</Button>
-                </Stack>
-            </Alert>
+            <Offcanvas placement='top' show={show} onHide={handleClose}>
+                <Offcanvas.Header closeButton>
+                <Offcanvas.Title>ADMISSION ANNOUNCEMENT!</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                <Alert variant='info'>
+                    {/* <Alert.Heading>Admission!</Alert.Heading> */}
+                    <p>This is to inform the general public that the online application portal for admission into the <b>College of Administration Management and Technology 2022-2023 session</b> is now open!</p>
+                    <hr />
+                    <Button variant='contained' size="medium" onClick={() => navigate('/admissions')}>Apply Now</Button>
+                </Alert>
+                <br />
+                {/* Interested applicants are to apply via this link <Link to='#'>www.camtech.edu.ng/admissions</Link> */}
+                </Offcanvas.Body>
+            </Offcanvas>
             <AppNavbar />
         </header>
     );
