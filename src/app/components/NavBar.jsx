@@ -16,7 +16,7 @@ export default function AppNavbar()
   return (
     <Navbar collapseOnSelect expanded={expanded} expand="lg" id="navbar" variant="dark">
       <Container className='px-0'>
-        <Navbar.Brand href="/" id="brand"><img src="./assets/images/logo.jpeg" alt="camtech" height={30}    width={30} className='rounded me-2' />CAMTECH</Navbar.Brand>
+        <Navbar.Brand href="/" id="brand"><img src="./assets/images/logo.jpeg" alt="camtech" height={40}    width={40} className='rounded me-2' />CAMTECH</Navbar.Brand>
         <Navbar.Toggle onClick={() => setExpanded(expanded? false: 'expanded')} aria-controls="responsive-navbar-nav" className='me-3 px-1 py-0 shadow-sm' />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="w-100 me-auto d-flex justify-content-center">

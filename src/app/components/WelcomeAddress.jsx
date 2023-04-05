@@ -1,6 +1,6 @@
 export default function WelcomeAddress(props) {
     return (
-        <div id='welcome-msg-outer-container' className="p-5 pb-4 d-flex justify-content-center align-items-center">
+        <div id='welcome-msg-outer-container' className="p-5 pb-4 mb-4 d-flex justify-content-center align-items-center">
             <div id='welcome-msg-container' className="p-2 px-5 d-flex justify-content-center align-items-start">
                 <div id='welcome-img-container' className="d-flex-column justify-content-center align-items-center">
                     {
@@ -11,7 +11,7 @@ export default function WelcomeAddress(props) {
                         height={500}
                         width={400}
                         className="d-block"
-                        style={{borderRadius: '30px', border: '6px dashed red'}}
+                        style={{borderRadius: '20px', border: '5px solid black'}}
                     />
                     :
                     <img
@@ -23,10 +23,10 @@ export default function WelcomeAddress(props) {
                         style={{borderRadius: '20px', border: '2px dashed green'}}
                     />
                     }
-                    <div className=''>
+                    {!props.rector && <div>
                         <span className='fs-5 mt-2 d-block text-secondary text-center'>{props.author}</span>
                         <h6 className='fs-5 text-center'>{props.pos}</h6>
-                    </div>
+                    </div>}
                 </div>
                 <div className='ps-4' id='welcome-txt'>
                     <h1 className='fs-2 lh-base px-3'>Welcome Message</h1>

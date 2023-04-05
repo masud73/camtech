@@ -5,6 +5,7 @@ import AppNavbar from './components/NavBar';
 import Button from '@mui/material/Button';
 import { Stack } from '@mui/material';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function AppHeader() {
@@ -39,6 +40,8 @@ export default function AppHeader() {
 }
 
 export function TopBar(props) {
+    const navigate = useNavigate();
+    
     return (
         <div id='top-bar-container' className="d-flex justify-content-between align-items-center" role='toolbar'>
             <div className="left-content d-flex align-items-center">
@@ -50,7 +53,7 @@ export function TopBar(props) {
                 </a>
             </div>
             <div className="right-content d-flex align-items-center">
-                {props.homepage && <Button size="small" variant='outlined' className='text-capitalize me-3 border border-white'>Student Login</Button>}
+                {props.homepage && <Button size="small" variant='outlined' className='text-capitalize me-3 border border-white' onClick={() => navigate('/student/login')}>Student Login</Button>}
                 <a href="https://twitter.com/" className='border p-1 rounded text-decoration-none me-3' target='_blank' rel='noopener noreferrer'><div className="wrapper d-flex align-items-center"><Twitter size={17} /></div></a>
                 <a href="https://web.facebook.com/groups/417586871675318" className='border p-1 rounded text-decoration-none me-3' target='_blank' rel='noopener noreferrer'><div className="wrapper d-flex align-items-center"><Facebook size={17} /></div></a>
                 <a href="https://instagram.com/" className='border p-1 rounded text-decoration-none' target='_blank' rel='noopener noreferrer'><div className="wrapper d-flex align-items-center"><Instagram size={17} /></div></a>
