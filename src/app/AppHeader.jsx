@@ -20,7 +20,7 @@ export default function AppHeader() {
             <div className="banner-wrapper" role='banner'>
                 <img src="./assets/images/banner.png" alt="" className='object-fit-cover' width='100%' height="100%" />
             </div>
-            <Offcanvas placement='top' show={show} onHide={handleClose}>
+            <Offcanvas className='h-50' placement='top' show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                 <Offcanvas.Title>ADMISSION ANNOUNCEMENT!</Offcanvas.Title>
                 </Offcanvas.Header>
