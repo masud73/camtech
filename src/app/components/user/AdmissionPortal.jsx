@@ -33,7 +33,7 @@ export default function AdmissionPortal() {
                             <Card.Header as='h6'>Courses & Departments</Card.Header>
                             <Card.Body className='text-justify'>
                             Download a soft copy of the available courses and departments offered by the college. <br />
-                                <Button className='mt-4 text-capitalize' variant="outlined" startIcon={<Download size={18} color='blue' />}>
+                                <Button className='mt-4 text-capitalize' variant="outlined" startIcon={<Download size={18} color='#1976d2' />}>
                                     Download
                                 </Button>
                             </Card.Body>
@@ -42,10 +42,10 @@ export default function AdmissionPortal() {
                             <Card.Header as='h6'>Start Application</Card.Header>
                             <Card.Body className='text-justify'>
                                 Get started by creating an account or logging into an existing account to complete your application. <br />
-                                <Button onClick={() => navigate('/applicant/signup')} className='mt-4 me-3 text-capitalize' variant="outlined" startIcon={<PencilSquare size={18} color='blue' />}>
+                                <Button disabled onClick={() => navigate('/applicant/signup')} className='mt-4 me-3 text-capitalize' variant="outlined" startIcon={<PencilSquare style={{opacity: '.2'}} size={18} color='#1976d2' />}>
                                     Create account
                                 </Button>
-                                <Button onClick={() => navigate('/applicant/login')} className='mt-4 text-capitalize' variant="outlined" startIcon={<Lock size={18} color='blue' />}>
+                                <Button onClick={() => navigate('/applicant/login')} className='mt-4 text-capitalize' variant="outlined" startIcon={<Lock size={18} color='#1976d2' />}>
                                     Login
                                 </Button>
                             </Card.Body>
@@ -126,8 +126,8 @@ function PortalBanner() {
     return (
         <div className='p-3 d-flex flex-column align-items-center'>
             <img src="./assets/images/logo.jpeg" alt="camtech" className='m-3 rounded border' height={70} width={70} />
-            <h1 className='fs-3 text-primary text-center'>Welcome to CAMTECH Online Application Portal <span className='text-success'> - Open</span></h1>
-            <p className='text-success text-center'>Online Application for Admission <b className='text-success'>2022-2023 Session</b> is now <b className='text-success'>OPEN!</b></p>
+            <h1 className='fs-3 text-primary text-center'>Welcome to CAMTECH Online Application Portal <span className='text-danger'> - Closed</span></h1>
+            <p className='text-danger text-center'>Online Application for Admission <b className='text-danger'>2022-2023 Session</b> is now <b className='text-danger'>CLOSED!</b></p>
         </div>
     );
 }

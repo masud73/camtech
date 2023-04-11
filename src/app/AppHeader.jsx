@@ -20,21 +20,18 @@ export default function AppHeader() {
             <div className="banner-wrapper" role='banner'>
                 <img src="./assets/images/banner.png" alt="" className='object-fit-cover' width='100%' height="100%" />
             </div>
-            <Offcanvas className='h-50' placement='top' show={show} onHide={handleClose}>
+            {/* <Offcanvas className='h-50' placement='top' show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                 <Offcanvas.Title>ADMISSION ANNOUNCEMENT!</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                 <Alert variant='info'>
-                    {/* <Alert.Heading>Admission!</Alert.Heading> */}
                     <p>This is to inform the general public that the online application portal for admission into the <b>College of Administration Management and Technology 2022-2023 session</b> is now open!</p>
                     <hr />
                     <Button variant='contained' size="medium" onClick={() => navigate('/admissions')}>Apply Now</Button>
                 </Alert>
-                <br />
-                {/* Interested applicants are to apply via this link <Link to='#'>www.camtech.edu.ng/admissions</Link> */}
                 </Offcanvas.Body>
-            </Offcanvas>
+            </Offcanvas> */}
             <AppNavbar />
         </header>
     );
