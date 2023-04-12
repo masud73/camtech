@@ -2,17 +2,17 @@ import { Envelope, Facebook, Instagram, Twitter } from 'react-bootstrap-icons';
 import AppNavbar from './components/NavBar';
 
 import Button from '@mui/material/Button';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Alert } from 'react-bootstrap';
+// import { Alert } from 'react-bootstrap';
 
 
 export default function AppHeader() {
-    const [show, setShow] = useState(true);
-    const navigate = useNavigate();
+    // const [show, setShow] = useState(true);
+    // const navigate = useNavigate();
 
-    const handleClose = () => setShow(false);
+    // const handleClose = () => setShow(false);
 
     return (
         <header className="app-header">
