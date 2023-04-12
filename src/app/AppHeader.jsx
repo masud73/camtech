@@ -4,7 +4,7 @@ import AppNavbar from './components/NavBar';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+// import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Alert } from 'react-bootstrap';
 
 
